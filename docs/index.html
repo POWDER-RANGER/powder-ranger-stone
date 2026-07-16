@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powder-Ranger Stone Translator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>POWDER-RANGER STONE</h1>
+      <p class="subtitle">Bidirectional Translator (English ↔ Stone)</p>
+    </header>
+
+    <main>
+      <div class="translator">
+        <div class="pane">
+          <h2>English</h2>
+          <textarea id="english-input" placeholder="Enter English text..." rows="10"></textarea>
+          <div class="controls">
+            <button id="copy-english">Copy</button>
+            <button id="clear-english">Clear</button>
+          </div>
+        </div>
+
+        <div class="pane">
+          <h2>Stone</h2>
+          <div class="script-toggle">
+            <label>
+              <input type="radio" name="script" value="latin" checked> Latin
+            </label>
+            <label>
+              <input type="radio" name="script" value="runic"> Runic
+            </label>
+          </div>
+          <textarea id="stone-output" placeholder="Stone output appears here..." rows="10" readonly></textarea>
+          <div class="controls">
+            <button id="copy-stone">Copy</button>
+            <button id="clear-stone">Clear</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="options">
+        <div class="option-group">
+          <label for="direction">Direction:</label>
+          <select id="direction">
+            <option value="encode">English → Stone</option>
+            <option value="decode">Stone → English</option>
+          </select>
+        </div>
+        <div class="option-group">
+          <label for="unknown-policy">Unknown Tokens:</label>
+          <select id="unknown-policy">
+            <option value="mark">Mark (⟨word⟩)</option>
+            <option value="passthrough">Passthrough</option>
+            <option value="throw">Throw Error</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="ai-prompt">
+        <h3>Teach an AI</h3>
+        <p>Copy the prompt below to teach an AI the SKILLSTONE language:</p>
+        <textarea id="teaching-prompt" rows="6" readonly></textarea>
+        <button id="copy-prompt">Copy Prompt</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>Powder-Ranger Stone v6.0.0 | <a href="../ARCHITECTURE.md">Architecture</a> | <a href="../spec/SKILLSTONE.md">SKILLSTONE</a></p>
+    </footer>
+  </div>
+
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>
