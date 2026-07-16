@@ -1,0 +1,22 @@
+{
+  "name": "powder-ranger-stone",
+  "version": "6.0.0",
+  "description": "A deterministic, reversible procedural conlang with runic orthography.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --watch --test",
+    "gen:spec": "node scripts/generate-skillstone.mjs",
+    "verify": "node scripts/verify-invariant.mjs"
+  },
+  "keywords": [
+    "conlang",
+    "procedural",
+    "language",
+    "runic",
+    "deterministic"
+  ],
+  "author": "Curtis Farrar <137366958+POWDER-RANGER@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {}
+}
