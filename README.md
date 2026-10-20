@@ -11,7 +11,7 @@
 ## 🚀 Quickstart
 
 ### Use the Live Tool
-1. Open the **[GitHub Pages demo](https://powder-ranger.github.io/powder-ranger-stone/)**.
+1. Open the **[GitHub Pages site](https://powder-ranger.github.io/powder-ranger-stone/)**, then select **Launch translator**.
 2. Type English in the left pane → Stone appears in the right pane.
 3. Toggle **Latin/Runic** to switch scripts.
 4. Use **Direction: Stone → English** to decode Stone back to English.
