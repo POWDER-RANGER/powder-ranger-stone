@@ -46,7 +46,7 @@ function init() {
 // Load the teaching prompt from the spec
 async function loadTeachingPrompt() {
   try {
-    const response = await fetch('spec/teaching-prompt.md');
+    const response = await fetch('../spec/teaching-prompt.md');
     if (response.ok) {
       const prompt = await response.text();
       teachingPromptTextarea.value = prompt;
