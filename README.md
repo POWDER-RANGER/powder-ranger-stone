@@ -2,9 +2,9 @@
 
 **A deterministic, reversible, client-side translator for a procedural conlang with runic orthography.**
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?style=flat-square)](https://powder-ranger.github.io/powder-ranger-stone/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![ORCID: 0009-0008-9273-2458](https://img.shields.io/badge/ORCID-0009--0008--9273--2458-green)](https://orcid.org/0009-0008-9273-2458)
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-E31C23?style=flat-square&labelColor=0A0000)](https://powder-ranger.github.io/powder-ranger-stone/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-E31C23.svg?labelColor=0A0000)](LICENSE)
+[![ORCID: 0009-0008-9273-2458](https://img.shields.io/badge/ORCID-0009--0008--9273--2458-E31C23?labelColor=0A0000)](https://orcid.org/0009-0008-9273-2458)
 
 ---
 
