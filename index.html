@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="POWDER-RANGER STONE: a deterministic, reversible procedural language with Latin and runic orthography. Open the browser translator or inspect the language specification.">
+  <meta property="og:title" content="POWDER-RANGER STONE — Language Lab">
+  <meta property="og:description" content="A deterministic, reversible procedural language. Translate English to Stone, switch orthography, and inspect the canonical specification.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://powder-ranger.github.io/powder-ranger-stone/">
+  <link rel="canonical" href="https://powder-ranger.github.io/powder-ranger-stone/">
+  <title>POWDER-RANGER STONE — Language Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#0a0a0a;--panel:#121212;--ink:#f0eee8;--muted:#aaa69c;--line:#45443e;--acid:#d8ff54;--rust:#d76a42;--mono:"IBM Plex Mono",monospace;--display:"Space Grotesk",sans-serif}
+    *{box-sizing:border-box;border-radius:0!important}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--display);line-height:1.5}
+    a{color:inherit}
+    .shell{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{border-bottom:1px solid var(--line)}
+    .bar{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .wordmark,.eyebrow,nav,.meta{font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em}
+    .wordmark{font-size:.8rem;color:var(--acid);font-weight:600}
+    nav{display:flex;gap:22px;font-size:.68rem;color:var(--muted)}
+    nav a{text-decoration:none}nav a:hover{color:var(--acid)}
+    main{padding:clamp(56px,10vw,120px) 0 76px}
+    .eyebrow{font-size:.72rem;color:var(--acid);margin:0 0 22px}
+    h1{font-size:clamp(3rem,10vw,7.5rem);line-height:.88;letter-spacing:-.075em;max-width:900px;margin:0}
+    h1 span{color:var(--acid)}
+    .intro{max-width:650px;font-size:clamp(1.05rem,2.4vw,1.3rem);color:var(--muted);margin:28px 0 34px}
+    .actions{display:flex;flex-wrap:wrap;gap:10px}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 20px;text-decoration:none;font-family:var(--mono);font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;border:1px solid var(--acid);background:var(--acid);color:#111;font-weight:600}
+    .button.secondary{background:transparent;color:var(--ink);border-color:var(--line)}
+    .button:focus-visible,a:focus-visible{outline:2px solid white;outline-offset:4px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:76px}
+    article{padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:160px}
+    .meta{font-size:.65rem;color:var(--rust)}
+    h2{font-size:1.2rem;margin:18px 0 8px}
+    article p{font-size:.92rem;color:var(--muted);margin:0}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font: .68rem var(--mono);letter-spacing:.06em}
+    @media(max-width:700px){.bar{align-items:flex-start;flex-direction:column;padding:20px 0}.bar nav{flex-wrap:wrap;gap:12px}.grid{grid-template-columns:1fr}article{min-height:auto}main{padding-top:58px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header><div class="shell bar">
+    <a class="wordmark" href="./" aria-label="POWDER-RANGER STONE home">PR / STONE</a>
+    <nav aria-label="Primary navigation"><a href="docs/">Translator</a><a href="spec/SKILLSTONE.md">Specification</a><a href="ARCHITECTURE.md">Architecture</a><a href="https://github.com/POWDER-RANGER/powder-ranger-stone">Source</a></nav>
+  </div></header>
+  <main class="shell">
+    <p class="eyebrow">Language lab / Canonical seed 3098546205</p>
+    <h1>A language built to <span>round-trip.</span></h1>
+    <p class="intro">POWDER-RANGER STONE is a procedural constructed language with Latin and runic orthography. Its central design goal is reversible translation: encode text, decode it again, and keep the engine and specification aligned to one canonical seed.</p>
+    <div class="actions">
+      <a class="button" href="docs/">Launch translator <span aria-hidden="true">&nbsp;↗</span></a>
+      <a class="button secondary" href="spec/SKILLSTONE.md">Read the specification</a>
+    </div>
+    <section class="grid" aria-label="Project principles">
+      <article><span class="meta">01 / Deterministic</span><h2>One seed</h2><p>The canonical seed anchors language generation so the same inputs can be reproduced.</p></article>
+      <article><span class="meta">02 / Reversible</span><h2>Round-trip invariant</h2><p>The engine is designed around encode/decode consistency for supported vocabulary.</p></article>
+      <article><span class="meta">03 / Inspectable</span><h2>Source over claims</h2><p>Review the implementation, tests, generated specification, and change history in the public repository.</p></article>
+    </section>
+  </main>
+  <footer><div class="shell">POWDER-RANGER STONE · OPEN SOURCE · <a href="https://github.com/POWDER-RANGER/powder-ranger-stone">REPOSITORY AND HISTORY</a></div></footer>
+</body>
+</html>
